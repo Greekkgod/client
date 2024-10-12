@@ -18,12 +18,13 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="ml-auto">
-        <button className="bg-violet-600 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-green-800 rounded-full">
+        <button className="bg-violet-600 text-white duration-500 px-6 py-2 mx-4 hover:bg-green-800 rounded-full font-sans antialiased">
           LOGIN
         </button>
-        <button className="bg-violet-600 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-green-800 rounded-full">
-         SIGN UP
+        <button className="bg-green-800 text-white duration-500 px-6 py-2 mx-4 rounded-full font-sans antialiased">
+          SIGN UP
         </button>
+
       </div>
     </nav>
   );

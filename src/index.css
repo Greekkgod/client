@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg{
+    margin-top: 8px;
+   margin-left: 100px;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('./assets/master.png');
+}
