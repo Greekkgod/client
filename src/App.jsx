@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './compounds/Navbar'; // Import the Navbar component
+import Navbar from './compounds/Navbar';
 import SearchBar from './compounds/SearchBar';
 import Body from './compounds/Body';
 
@@ -10,11 +10,13 @@ const App = () => {
       <Navbar />
 
       {/* Main content with padding to account for the fixed Navbar */}
-      <div className="pt-24 px-5 flex justify-center">
+      <div className="pt-20 px-5 flex justify-end">
         <SearchBar />
       </div>
-      <div>
-        <Body/>
+
+      {/* Container for body with horizontal scroll */}
+      <div className="overflow-x-auto ">
+        <Body />
       </div>
     </div>
   );
