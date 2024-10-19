@@ -5,18 +5,18 @@ import Body from './compounds/Body';
 
 const App = () => {
   return (
-    <div className="h-screen bg-sky-200">
+    <div className="min-h-screen bg-sky-200 relative"> {/* Added relative for SearchBar positioning */}
       {/* Navbar at the top */}
       <Navbar />
 
-      {/* Main content with padding to account for the fixed Navbar */}
-      <div className="pt-20 px-5 flex justify-end">
-        <SearchBar />
+      {/* Main content */}
+      <div className="pt-20 px-5">
+        <Body />
       </div>
 
-      {/* Container for body with horizontal scroll */}
-      <div className="overflow-x-auto ">
-        <Body />
+      {/* SearchBar positioned at the right and lower down */}
+      <div className="absolute right-5 top-[66%] transform -translate-y-1/2 w-1/3"> {/* Adjusted top value for lower placement */}
+        <SearchBar />
       </div>
     </div>
   );
