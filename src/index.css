@@ -9,3 +9,12 @@
     background-repeat: no-repeat;
     background-image: url('./assets/master.png');
 }
+
+/* Hide scrollbars for all elements */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
