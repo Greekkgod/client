@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  
+}
 .bg{
     margin-top: 8px;
    margin-left: 100px;
@@ -10,11 +13,26 @@
     background-image: url('./assets/master.png');
 }
 
-/* Hide scrollbars for all elements */
+
 .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none; 
   }
   .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
   }
+  .login-page2 {
+    --login-bg: #363e47;
+    --login-color: #333;
+    --login-inner-bg: #d9d9d9;
+    --login-logo: #333;
+    --login-btn: #fff;
+    --login-btn-linear-gradient: -webkit-linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
+    --login-input: #333;
+    --login-input-border: #adadad;
+    --login-input-placeholder: #5d5d5d;
+    --login-input-border-valid: red;
+    --login-input-linear-gradient: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+    --login-input-border-bg: #6a7dfe;
+  }
+  

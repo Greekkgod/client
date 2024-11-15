@@ -1,32 +1,35 @@
 import React from 'react';
-
+import './Body.css';
 
 const Body = () => {
   return (
-    <div className="h-screen flex flex-col justify-end p-4"> {/* Ensure Body is full height and content is at the bottom */}
+    <div className="h-screen flex flex-col p-4">
       <div className="bg"></div>
-      <div className="overflow-x-auto mt-20 scrollbar-hide"> {/* Added scrollbar-hide class */}
-        <div className="flex space-x-40 pb-4"> {/* Increased horizontal spacing between the boxes */}
+      <div className="mt-20">
+        <div className="flex justify-between pb-4">
 
-          {/* First wider green box */}
-          <div className="w-80 h-60 bg-green-500 rounded-lg flex flex-col justify-center items-center">
-            <p className="text-white text-xl">Grocery 1</p>
-           <div className="ig"></div>
+          {/* First green box with image */}
+          <div className="grocery-box">
+            <img src="/src/assets/image1.png" alt="Grocery" className="grocery-image" />
+            <p className="grocery-text">Grocery</p>
           </div>
 
-          {/* Second wider green box */}
-          <div className="w-80 h-60 bg-green-500 rounded-lg flex flex-col justify-center items-center">
-            <p className="text-white text-xl">Grocery 2</p>
+          {/* Second green box with image */}
+          <div className="grocery-box">
+            <img src="/src/assets/image2.png" alt="Fruit and Vegetable" className="grocery-image" />
+            <p className="grocery-text">Fruit and Vegetable</p>
           </div>
 
-          {/* Third wider green box */}
-          <div className="w-80 h-60 bg-green-500 rounded-lg flex flex-col justify-center items-center">
-            <p className="text-white text-xl">Grocery 3</p>
+          {/* Third green box with image */}
+          <div className="grocery-box">
+            <img src="/src/assets/image5.png" alt="Beverages" className="grocery-image" />
+            <p className="grocery-text">Beverages</p>
           </div>
 
-          {/* Fourth wider green box */}
-          <div className="w-80 h-60 bg-green-500 rounded-lg flex flex-col justify-center items-center">
-            <p className="text-white text-xl">Grocery 4</p>
+          {/* Fourth green box with image */}
+          <div className="grocery-box">
+            <img src="/src/assets/image4.png" alt="Medicine" className="grocery-image" />
+            <p className="grocery-text">Medicine</p>
           </div>
 
         </div>
